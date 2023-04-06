@@ -1,0 +1,446 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: white;
+  z-index: 1;
+
+
+}
+
+@media screen and (max-width:1000px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+nav ul{
+	list-style: none;
+	float: right;
+	display: flex;
+	margin: 0;
+  padding: 0;
+}
+
+/*navbar innhold redigering*/
+nav ul li a{
+    display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #715E5E;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1,5px;
+	font-weight: 600;
+  padding: 25px;
+}
+
+/*Hover på navbaren*/
+nav ul li a:hover{
+	background-color: #DEDEDE;
+}
+
+/*dropdown instillinger for "food &drinks"*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #A08D8D;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*logo instillinger*/
+.logo {
+	width: 179px;
+	float: left;
+	padding: 10px 0px 0px 0px;
+	margin-left: 10px;
+}
+
+/*deler hele siden i bestemte deler*/
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: white;
+  height: 100vh;
+  
+  &:nth-of-type(2n) {
+    background-color: white;
+  }
+}
+
+#header{
+	background: url(Cafe3.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    overflow: hidden;
+}
+
+/*tittel på hovedside*/
+.title1{
+	font-size: 80px;
+	color: black;
+  font-family: 'Tangerine', cursive;
+  left: 30px;
+}
+
+#title1{
+  background-color: #fff;
+  width: 340px;
+  height: 60px;
+  padding: 50px;
+  position: relative;
+  margin-left: 380px;
+	margin-top: 300px;
+}
+
+#about{
+  padding: 100px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #D2B48C;
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.main_header{
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;  
+  font-size: 55px;
+  font-family: lucida bright;
+  color: #3C322F;
+}
+
+.symbol {
+  color: beige;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.allergen{
+  font-style: oblique;
+  font-size: 12px;
+  position: relative;
+  top: 125px;
+}
+
+.header{
+  color: #47362B;
+  letter-spacing: 2px;
+  position: relative;
+  top: 40px;
+}
+
+.description {
+  font-style: oblique;
+  position: relative;
+  top: 85px;
+}
+
+hr.top1{
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+  top: 20px;
+}
+
+hr.top2 {
+  width: 55%;
+  position: relative;
+  margin-left: 22%;
+  top: 55px;
+}
+
+hr.bottom2{
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
+  top: 110px;
+}
+
+.course1{
+  display: inline-block;
+  width: 30%;
+}
+
+#breakfast{
+  margin-left: 48px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;   
+}
+
+#food{
+  padding-top: 100px;
+}
+
+.flip{
+font-family: 'Reenie Beanie', cursive;
+color: black;
+font-size: 25px;
+text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+position: relative;
+top: 45px;
+margin-left: 40px;
+}
+
+#lunch{
+  padding-top: 100px;
+}
+
+.dishes{
+  margin-left: 48px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;   
+}
+
+#dessert{
+  padding-top: 100px;
+}
+
+#contact{
+  padding: 100px;
+}
+
+.message{
+  color:  #5d4037;
+  text-align: center;
+  font-style: oblique;
+  font-size: 17px;
+  margin-top: 60px;
+}
+
+#info{
+  margin-top: 130px;
+}
+
+#contact2{
+  background-color: #D2B48C;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+.contact_header{
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;  
+  font-size: 55px;
+  font-family: lucida bright;
+  color: #5d4037;
+}
+
+.adress{
+  color:  #5d4037;
+  border-width: 100px;
+  display: inline-block;
+  width: 33.33%;
+  float: right;
+  text-align: center;  
+}
+
+.opening{
+  color:  #5d4037;
+  display: inline-block;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+.contact_info{
+  color: #5d4037;
+  display: inline-block;
+  width: 33.33%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3{
+  letter-spacing: 2px;
+}
+
+hr.top5{
+    width: 55%;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+h4 {
+  font-family: "Playfair Display";
+  letter-spacing: 7px;
+  color: #5d4037 ;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+hr.top3{
+  width: 50%;
+  margin-top: 60px;
+}
+
+hr.top4{
+  width: 55%;
+  position: relative;
+  margin-top: 20px;
+}
+
+div.photoGrid  {
+  align-content: center;
+  }
+
+#drinks{
+  padding: 100px;
+  
+}
+
+#drinks2{
+  display: grid;
+  place-items: center;  
+}
+
+.about-text{
+  color: black;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.about{
+  background-color: #D2B48C;
+  width: 700px;
+  height: 250px;
+  padding: 50px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+ .fa {
+  font-size: 30px;
+  width: 35px;
+  margin: 10px 4px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook{
+background: #a18874;
+color: #3e2723 ;
+}
+
+.fa-twitter {
+background: #a18874;
+color: #3e2723;
+}
+
+.fa-instagram {
+background: #a18874;
+color:#3e2723;
+}
+
+.ikoner2 {
+color: white;
+}
+
+.ikoner1{
+  margin-left: 23px;
+  display: flex;
+  justify-content: center;   
+  
+}  
