@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Iphone.css">
+    <title>Iphone</title>
+</head>
+<body>
+    <!--Setter all kodingen inn i en div kalt Container-->
+    <div class="container">
+        <!--Dette er navigation baren, altså meny delen-->
+        <div class="navbar">
+            <img src="logo.png" alt="Apple logo" class="logo">
+            <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+            <nav>
+                <ul id="menuList">
+                    <li class="liste"><a href="">Home</a></li>
+                    <li class="liste"><a href="">Functions</a></li>
+                    <li class="liste"><a href="">Avability</a></li>
+                    <li class="liste"><a href="">Responsive</a></li>
+                    <li class="liste"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="togglemenu()"><img src="menu.png" class="menu-icon"></button>
+        </div>
+
+    <div class="main">
+        <div class="text-content">
+        <h1>Iphone 14 Pro Max</h1>
+        <h2>Luxury in your hands</h2>
+
+        <p>Both the front and rear cameras on the iPhone 14 received some upgrades. 
+        On the front, the selfie camera is an all-new 12MP camera that features autofocus. 
+        Apple says the new camera delivers up to 2x better low-light photos thanks to its 
+        larger aperture.</p>
+        </div>
+
+            <div class="emty-box">
+                <img src="telefon.png" alt="Iphone" class="telefon">
+            </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    var menuList = document.getElementById("menuList");
+    var listItem = document.getElementsByClassName("liste");
+    menuList.style.maxHeight = "0px";
+    function togglemenu(){
+
+        if(menuList.style.maxHeight === "0px")
+        {
+            menuList.style.maxHeight = "130px"
+            listItem.array.forEach(element => {
+                this.style.display = "block"
+            });
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px"
+            listItem.array.forEach(element => {
+                this.style.display = "none"
+            });
+        }
+    }
+
+</script>
+
+</body>
+</html>
